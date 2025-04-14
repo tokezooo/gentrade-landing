@@ -71,7 +71,7 @@ export default function HowItWorks() {
           </p>
         </motion.div>
 
-        <div className="relative">
+        <div className="relative overflow-x-hidden">
           {/* Timeline line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-foreground/0 via-brand-foreground/80 to-brand-foreground/0 transform -translate-x-1/2"></div>
 

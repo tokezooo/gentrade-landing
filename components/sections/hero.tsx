@@ -69,7 +69,7 @@ export default function Hero({
           <WaitlistForm />
         </div>
         {mockup !== false && (
-          <div className="relative w-full pt-12">
+          <div className="relative w-full">
             <MockupFrame
               className="animate-appear opacity-0 delay-700"
               size="small"

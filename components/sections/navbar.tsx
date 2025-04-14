@@ -7,7 +7,6 @@ import {
 } from "../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Menu } from "lucide-react";
-import LaunchUI from "../logos/launch-ui";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
@@ -37,7 +36,7 @@ interface NavbarProps {
 }
 
 export default function Navbar({
-  logo = <LaunchUI />,
+  logo = "",
   name = "Launch UI",
   homeUrl = "https://www.launchuicomponents.com/",
   mobileLinks = [

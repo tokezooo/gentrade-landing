@@ -1,7 +1,6 @@
 "use client";
 
 import AutoScroll from "embla-carousel-auto-scroll";
-import Image from "next/image";
 
 import {
   Carousel,
@@ -17,11 +16,13 @@ interface Logo {
 }
 
 interface Logos3Props {
+  heading?: string;
   logos?: Logo[];
   className?: string;
 }
 
 const Logos3 = ({
+  heading = "Trusted by these companies",
   logos = [
     {
       id: "logo-1",
@@ -81,7 +82,7 @@ const Logos3 = ({
         </h1>
       </div> */}
       <div className="pt-10">
-        <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl">
+        <div className="relative mx-auto flex w-full max-w-full overflow-hidden items-center justify-center lg:max-w-5xl">
           <Carousel
             opts={{ loop: true }}
             plugins={[AutoScroll({ playOnInit: true, speed: 1 })]}
@@ -92,14 +93,12 @@ const Logos3 = ({
                   key={logo.id}
                   className="flex basis-1/3 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
                 >
-                  <div className="mx-10 flex shrink-0 items-center justify-center">
+                  <div className="mx-4 flex shrink-0 items-center justify-center">
                     <div>
-                      <Image
+                      <img
                         src={logo.image}
                         alt={logo.description}
                         className={logo.className}
-                        width={100}
-                        height={28}
                       />
                     </div>
                   </div>
@@ -107,8 +106,8 @@ const Logos3 = ({
               ))}
             </CarouselContent>
           </Carousel>
-          <div className="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-background to-transparent"></div>
-          <div className="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-background to-transparent"></div>
+          <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent"></div>
+          <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent"></div>
         </div>
       </div>
     </>

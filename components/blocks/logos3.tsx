@@ -1,6 +1,7 @@
 "use client";
 
 import AutoScroll from "embla-carousel-auto-scroll";
+import Image from "next/image";
 
 import {
   Carousel,
@@ -16,13 +17,11 @@ interface Logo {
 }
 
 interface Logos3Props {
-  heading?: string;
   logos?: Logo[];
   className?: string;
 }
 
 const Logos3 = ({
-  heading = "Trusted by these companies",
   logos = [
     {
       id: "logo-1",
@@ -95,10 +94,12 @@ const Logos3 = ({
                 >
                   <div className="mx-10 flex shrink-0 items-center justify-center">
                     <div>
-                      <img
+                      <Image
                         src={logo.image}
                         alt={logo.description}
                         className={logo.className}
+                        width={100}
+                        height={28}
                       />
                     </div>
                   </div>

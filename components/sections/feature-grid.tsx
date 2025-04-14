@@ -1,5 +1,4 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import { motion } from "framer-motion";
 import {
   Brain,
   History,

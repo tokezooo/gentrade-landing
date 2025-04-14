@@ -29,16 +29,9 @@ function FeatureSection({
     margin: "-100px",
   });
 
-  const IconComponent = () => (
-    <div className="w-12 h-12 rounded-full bg-brand-foreground/20 flex items-center justify-center mr-4">
-      {icon}
-    </div>
-  );
-
   const Content = () => (
     <div className="lg:w-1/2">
       <div className="flex items-center mb-6">
-        {/* <IconComponent /> */}
         <h3 className="text-2xl font-bold text-brand-foreground">{title}</h3>
       </div>
       <div className="text-gray-300 text-lg mb-6">{description}</div>

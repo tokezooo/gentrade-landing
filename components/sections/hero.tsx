@@ -1,10 +1,9 @@
-import { Button, type ButtonProps } from "../ui/button";
+import { type ButtonProps } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { ArrowRightIcon } from "lucide-react";
 import { Section } from "../ui/section";
 import { Mockup, MockupFrame } from "../ui/mockup";
 import Glow from "../ui/glow";
-import Github from "../logos/github";
 import { ReactNode } from "react";
 import Screenshot from "../ui/screenshot";
 import { cn } from "@/lib/utils";
@@ -54,7 +53,6 @@ export default function Hero({
       </a>
     </Badge>
   ),
-  buttons = [],
   className,
 }: HeroProps) {
   return (

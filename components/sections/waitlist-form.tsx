@@ -44,7 +44,7 @@ export default function WaitlistForm({ className }: { className?: string }) {
           toast.error(result.error || "Failed to join waitlist");
         }
       }
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);

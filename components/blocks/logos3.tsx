@@ -16,13 +16,11 @@ interface Logo {
 }
 
 interface Logos3Props {
-  heading?: string;
   logos?: Logo[];
   className?: string;
 }
 
 const Logos3 = ({
-  heading = "Trusted by these companies",
   logos = [
     {
       id: "logo-1",
@@ -76,11 +74,6 @@ const Logos3 = ({
 }: Logos3Props) => {
   return (
     <>
-      {/* <div className="container flex flex-col items-center text-center">
-        <h1 className="my-6 text-pretty text-2xl font-bold lg:text-4xl">
-          {heading}
-        </h1>
-      </div> */}
       <div className="pt-10">
         <div className="relative mx-auto flex w-full max-w-full overflow-hidden items-center justify-center lg:max-w-5xl">
           <Carousel

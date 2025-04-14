@@ -50,8 +50,10 @@ const exchanges = {
 
 export default function Exchanges() {
   return (
-    <section id="exchanges" className="py-13 max-w-container mx-auto">
-      <Logos3 {...exchanges} />
+    <section id="features" className="py-16 max-w-container mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 opacity-50">
+        <Logos3 {...exchanges} />
+      </div>
     </section>
   );
 }

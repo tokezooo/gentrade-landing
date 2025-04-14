@@ -125,11 +125,14 @@ export default function Navigation({
         {menuItems.map((item, index) => (
           <NavigationMenuItem key={index}>
             {item.isLink ? (
-              <Link href={item.href || ""} legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink asChild>
+                <Link
+                  href={item.href || ""}
+                  className={navigationMenuTriggerStyle()}
+                >
                   {item.title}
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             ) : (
               <>
                 <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
@@ -196,7 +199,7 @@ function ListItem({
           data-slot="list-item"
           className={cn(
             "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block space-y-1 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none",
-            className,
+            className
           )}
           {...props}
         >

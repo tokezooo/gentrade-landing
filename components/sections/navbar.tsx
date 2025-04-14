@@ -1,13 +1,13 @@
-import Navigation from "../../ui/navigation";
-import { Button, type ButtonProps } from "../../ui/button";
+import Navigation from "../ui/navigation";
+import { Button, type ButtonProps } from "../ui/button";
 import {
   Navbar as NavbarComponent,
   NavbarLeft,
   NavbarRight,
-} from "../../ui/navbar";
-import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
+} from "../ui/navbar";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Menu } from "lucide-react";
-import LaunchUI from "../../logos/launch-ui";
+import LaunchUI from "../logos/launch-ui";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
@@ -46,7 +46,11 @@ export default function Navbar({
     { text: "Documentation", href: "https://www.launchuicomponents.com/" },
   ],
   actions = [
-    { text: "Sign in", href: "https://www.launchuicomponents.com/", isButton: false },
+    {
+      text: "Sign in",
+      href: "https://www.launchuicomponents.com/",
+      isButton: false,
+    },
     {
       text: "Get Started",
       href: "https://www.launchuicomponents.com/",
@@ -95,7 +99,7 @@ export default function Navbar({
                 >
                   {action.text}
                 </a>
-              ),
+              )
             )}
             <Sheet>
               <SheetTrigger asChild>

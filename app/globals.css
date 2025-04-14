@@ -111,7 +111,7 @@
 :root {
   /* Accent colors */
   --brand: #1c1c1e;
-  --brand-foreground: #acf228;
+  --brand-foreground: #abff00;
 
   /* Customized shadcn/ui colors */
   --background: oklch(97.65% 0.001 17.18);
@@ -160,7 +160,7 @@
 .dark {
   /* Accent colors */
   --brand: #1c1c1e;
-  --brand-foreground: #acf228;
+  --brand-foreground: #abff00;
 
   /* Customized shadcn/ui colors */
   --background: oklch(0.141 0.005 285.823);

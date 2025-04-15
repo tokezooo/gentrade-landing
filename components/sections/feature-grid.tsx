@@ -26,7 +26,7 @@ const features = [
       "Validate your strategies against historical market data in minutes.",
     href: "/",
     cta: "Learn more",
-    className: "lg:col-span-1 lg:row-span-2",
+    className: "lg:col-span-1 lg:row-span-1",
   },
   {
     Icon: Sliders,
@@ -35,7 +35,7 @@ const features = [
       "Fine-tune parameters with Hyperopt or let AI suggest optimal settings for stops, indicators, and entry/exit conditions.",
     href: "/",
     cta: "Learn more",
-    className: "lg:col-span-1 lg:row-span-2",
+    className: "lg:col-span-1 lg:row-span-1",
   },
   {
     Icon: Rocket,
@@ -44,16 +44,16 @@ const features = [
       "Validate performance with risk-free Dry-Runs on live data, then deploy for Live Trading with confidence.",
     href: "/",
     cta: "Learn more",
-    className: "lg:col-span-1 lg:row-span-1",
+    className: "lg:col-span-2 lg:row-span-1",
   },
   {
     Icon: Clock,
     name: "Strategy Versioning",
     description:
-      "Track every optimization and easily revert to previous high-performing versions.",
+      "Track every optimization and easily revert to previous high-performing versions. Don't worry about breaking your strategy, we've got you covered.",
     href: "/",
     cta: "Learn more",
-    className: "lg:col-span-1 lg:row-span-1",
+    className: "lg:col-span-2 lg:row-span-1",
   },
   {
     Icon: GitBranch,

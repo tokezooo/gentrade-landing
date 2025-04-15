@@ -71,7 +71,7 @@ export default function HowItWorks() {
           </p>
         </motion.div>
 
-        <div className="relative overflow-x-hidden">
+        <div className="relative overflow-x-hidden pt-2">
           {/* Timeline line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-foreground/0 via-brand-foreground/80 to-brand-foreground/0 transform -translate-x-1/2"></div>
 
@@ -138,7 +138,7 @@ export default function HowItWorks() {
                         delay: 0.5,
                         ease: "easeOut",
                       }}
-                      className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 z-10 
+                      className="mt-[-40px] md:mt-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 z-10 
                       w-12 h-12 rounded-full backdrop-blur-3xl
                       border-2 border-brand-foreground/50 
                       flex items-center justify-center 

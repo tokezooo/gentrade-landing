@@ -29,7 +29,10 @@ function FeatureSection({
 
   const Content = () => (
     <div className="lg:w-1/2">
-      <div className="flex items-center mb-6">
+      <div className="flex items-center mb-6 gap-2">
+        <div className="sm:hidden flex items-center justify-center h-12 w-12">
+          {icon}
+        </div>
         <h3 className="text-2xl font-bold text-brand-foreground">{title}</h3>
       </div>
       <div className="text-gray-300 text-lg mb-6">{description}</div>
@@ -46,15 +49,18 @@ function FeatureSection({
 
   const Visual = () => (
     <div className="lg:w-1/2 hidden sm:block">
-      <div className="rounded-xl overflow-hidden shadow-xl">
+      <div className="rounded-xl overflow-hidden">
         <div className="h-[300px] p-6 relative">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(76,175,80,0.1),transparent_70%)]"></div>
-          <div className="flex items-center justify-center h-full">
+          {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(76,175,80,0.1),transparent_70%)] blur-3xl"></div> */}
+          <div className="flex items-center justify-center h-full ">
             <div className="text-center">
               {React.cloneElement(icon, {
                 className: "h-16 w-16 text-brand-foreground mx-auto mb-4",
               } as React.SVGProps<SVGSVGElement>)}
-              <Badge variant="outline" className="text-lg">
+              <Badge
+                variant="outline"
+                className="text-lg shadow-2xl shadow-brand-foreground/70"
+              >
                 Coming Soon
               </Badge>
             </div>

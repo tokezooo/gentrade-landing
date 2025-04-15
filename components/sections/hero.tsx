@@ -29,16 +29,7 @@ interface HeroProps {
 export default function Hero({
   title = "Give your big idea the design it deserves",
   description = "Professionally designed blocks and templates built with React, Shadcn/ui and Tailwind that will help your product stand out.",
-  mockup = (
-    <Screenshot
-      srcLight="/app-light.png"
-      srcDark="/app-dark.png"
-      alt="Launch UI app screenshot"
-      width={1248}
-      height={765}
-      className="w-full"
-    />
-  ),
+  mockup = false,
   badge = (
     <Badge variant="outline" className="animate-appear">
       <span className="text-muted-foreground">

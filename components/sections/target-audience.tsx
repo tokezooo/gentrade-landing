@@ -1,4 +1,7 @@
+"use client";
+
 import { Card } from "@/components/ui/card";
+import { motion, useInView } from "framer-motion";
 import {
   User,
   TrendingUp,
@@ -7,7 +10,7 @@ import {
   DollarSign,
   Users,
 } from "lucide-react";
-
+import { useRef } from "react";
 interface AudienceCardProps {
   title: string;
   description: string;
@@ -15,16 +18,29 @@ interface AudienceCardProps {
 }
 
 function AudienceCard({ title, description, icon }: AudienceCardProps) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    once: true,
+    margin: "-100px",
+  });
   return (
-    <Card className="border border-none flex flex-col items-center text-center gap-1">
-      <div className="mb-4 rounded-full bg-brand-foreground/10 p-3 w-12 h-12 flex items-center justify-center text-brand-foreground">
-        {icon}
-      </div>
-      <h3 className="text-xl font-semibold text-brand-foreground mb-1">
-        {title}
-      </h3>
-      <p className="text-muted-foreground">{description}</p>
-    </Card>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 20 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      key={title}
+    >
+      <Card className="border border-none flex flex-col items-center text-center gap-1">
+        <div className="mb-4 rounded-full bg-brand-foreground/10 p-3 w-12 h-12 flex items-center justify-center text-brand-foreground">
+          {icon}
+        </div>
+        <h3 className="text-xl font-semibold text-brand-foreground mb-1">
+          {title}
+        </h3>
+        <p className="text-muted-foreground">{description}</p>
+      </Card>
+    </motion.div>
   );
 }
 
@@ -66,7 +82,7 @@ export default function TargetAudience() {
   ];
 
   return (
-    <section id="features" className="py-16 max-w-container mx-auto">
+    <section id="target-audience" className="py-16 max-w-container mx-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

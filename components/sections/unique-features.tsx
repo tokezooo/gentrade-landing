@@ -5,7 +5,7 @@ import { GitBranch, ShoppingCart, Brain } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-
+import { Badge } from "@/components/ui/badge";
 interface FeatureSectionProps {
   icon: React.ReactElement;
   title: string;
@@ -47,7 +47,7 @@ function FeatureSection({
   );
 
   const Visual = () => (
-    <div className="lg:w-1/2">
+    <div className="lg:w-1/2 hidden sm:block">
       <div className="rounded-xl overflow-hidden shadow-xl">
         <div className="h-[300px] p-6 relative">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(76,175,80,0.1),transparent_70%)]"></div>
@@ -56,7 +56,9 @@ function FeatureSection({
               {React.cloneElement(icon, {
                 className: "h-16 w-16 text-brand-foreground mx-auto mb-4",
               } as React.SVGProps<SVGSVGElement>)}
-              <p className="text-gray-300">{placeholderText}</p>
+              <Badge variant="outline" className="text-lg">
+                Coming Soon
+              </Badge>
             </div>
           </div>
         </div>
@@ -162,14 +164,14 @@ export default function UniqueFeatures() {
   return (
     <section id="unique-features" className="py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Unique Capabilities
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Discover what sets GenTrade apart from other trading platforms
           </p>
-        </div>
+        </div> */}
 
         <div className="space-y-24">
           {features.map((feature, index) => (

@@ -56,14 +56,14 @@ export default function PrivacyPolicy() {
           </h2>
 
           <p className="mb-4">
-            We collect "Non-Personal Information" and "Personal Information."
-            Non-Personal Information includes information that cannot be used to
-            personally identify you, such as usage data, general demographic
-            information we may collect, referring/exit pages and URLs, platform
-            types, preferences you submit and preferences that are generated
-            based on the data you submit and number of clicks. Personal
-            Information includes your email, name, trading preferences, and
-            other information you provide after registration.
+            We collect &quot;Non-Personal Information&quot; and &quot;Personal
+            Information.&quot; Non-Personal Information includes information
+            that cannot be used to personally identify you, such as usage data,
+            general demographic information we may collect, referring/exit pages
+            and URLs, platform types, preferences you submit and preferences
+            that are generated based on the data you submit and number of
+            clicks. Personal Information includes your email, name, trading
+            preferences, and other information you provide after registration.
           </p>
 
           <h3 className="text-xl font-semibold mb-3">
@@ -94,7 +94,9 @@ export default function PrivacyPolicy() {
             Policy.
           </p>
 
-          <h3 className="text-xl font-semibold mb-3">3. Children's Privacy</h3>
+          <h3 className="text-xl font-semibold mb-3">
+            3. Children&apos;s Privacy
+          </h3>
           <p className="mb-4">
             The Site and the Service are not directed to anyone under the age of
             13. The Site does not knowingly collect or solicit information from

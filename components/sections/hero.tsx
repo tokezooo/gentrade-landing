@@ -5,7 +5,6 @@ import { Section } from "../ui/section";
 import { Mockup, MockupFrame } from "../ui/mockup";
 import Glow from "../ui/glow";
 import { ReactNode } from "react";
-import Screenshot from "../ui/screenshot";
 import { cn } from "@/lib/utils";
 import WaitlistForm from "./waitlist-form";
 

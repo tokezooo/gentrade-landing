@@ -89,8 +89,8 @@ export default async function Home() {
             Join the waitlist to get early access
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            We're currently in our early stages and only accepting a limited
-            number of users
+            We&apos;re currently in our early stages and only accepting a
+            limited number of users
           </p>
         </div>
         <div className="relative ">

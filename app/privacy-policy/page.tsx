@@ -13,30 +13,33 @@ export default function PrivacyPolicy() {
 
       <div className="prose prose-gray dark:prose-invert max-w-none">
         <p className="text-lg mb-6">
-          GenTrade (the "Company") is committed to maintaining robust privacy
-          protections for its users. Our Privacy Policy ("Privacy Policy") is
-          designed to help you understand how we collect, use and safeguard the
-          information you provide to us and to assist you in making informed
-          decisions when using our Service.
+          GenTrade (the &quot;Company&quot;) is committed to maintaining robust
+          privacy protections for its users. Our Privacy Policy (&quot;Privacy
+          Policy&quot;) is designed to help you understand how we collect, use
+          and safeguard the information you provide to us and to assist you in
+          making informed decisions when using our Service.
         </p>
 
         <section className="mb-8">
           <p className="mb-4">
-            For purposes of this Agreement, "Site" refers to the Company's
-            website, which can be accessed at https://gentrade.xyz.
+            For purposes of this Agreement, &quot;Site&quot; refers to the
+            Company&apos;s website, which can be accessed at
+            https://gentrade.xyz.
           </p>
 
           <p className="mb-4">
-            "Service" refers to the Company's services accessed via the Site,
-            which provides algorithmic trading solutions and related services.
+            &quot;Service&quot; refers to the Company&apos;s services accessed
+            via the Site, which provides algorithmic trading solutions and
+            related services.
           </p>
 
           <p className="mb-4">
-            The terms "we," "us," and "our" refer to the Company.
+            The terms &quot;we,&quot; &quot;us,&quot; and &quot;our&quot; refer
+            to the Company.
           </p>
 
           <p className="mb-4">
-            "You" refers to you, as a user of our Site or our Service.
+            &quot;You&quot; refers to you, as a user of our Site or our Service.
           </p>
 
           <p className="mb-4">
@@ -113,8 +116,8 @@ export default function PrivacyPolicy() {
             Information with third parties without your consent. We do share
             Personal Information with vendors who are performing services for
             the Company, such as the servers for our email communications who
-            are provided access to user's email address for purposes of sending
-            emails from us.
+            are provided access to user&apos;s email address for purposes of
+            sending emails from us.
           </p>
 
           <h3 className="text-xl font-semibold mb-3">

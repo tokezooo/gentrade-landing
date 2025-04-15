@@ -12,7 +12,6 @@ interface FeatureSectionProps {
   description: React.ReactNode;
   bulletPoints: string[];
   isReversed?: boolean;
-  placeholderText: string;
 }
 
 function FeatureSection({
@@ -21,7 +20,6 @@ function FeatureSection({
   description,
   bulletPoints,
   isReversed = false,
-  placeholderText,
 }: FeatureSectionProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, {

@@ -6,7 +6,7 @@ import {
   NavbarRight,
 } from "../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, Sparkle } from "lucide-react";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
@@ -36,25 +36,19 @@ interface NavbarProps {
 }
 
 export default function Navbar({
-  logo = "",
-  name = "Launch UI",
-  homeUrl = "https://www.launchuicomponents.com/",
-  mobileLinks = [
-    { text: "Getting Started", href: "https://www.launchuicomponents.com/" },
-    { text: "Components", href: "https://www.launchuicomponents.com/" },
-    { text: "Documentation", href: "https://www.launchuicomponents.com/" },
-  ],
+  logo = (
+    <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
+      <Sparkle className="size-4" />
+    </div>
+  ),
+  name = "GenTrade",
+  homeUrl = "https://gentrade.xyz/",
+  mobileLinks = [],
   actions = [
     {
-      text: "Sign in",
-      href: "https://www.launchuicomponents.com/",
-      isButton: false,
-    },
-    {
-      text: "Get Started",
-      href: "https://www.launchuicomponents.com/",
+      text: "Join waitlist",
+      href: "/#waitlist",
       isButton: true,
-      variant: "default",
     },
   ],
   showNavigation = true,
